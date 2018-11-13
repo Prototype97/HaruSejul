@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/space"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="내일의 다짐은 무엇으로 해볼까요?"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:id="@+id/thirdLine"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/text"
+        android:layout_margin="20dp"
+        android:hint="딱 한가지, 한 줄로 쓰셔야 해요 :)"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@drawable/goldenstroke_background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/thirdLine"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/blank_step"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/blank_step"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/full_step"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

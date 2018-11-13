@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/menu"
+            android:layout_margin="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@+id/menuButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="오늘 하루는 어떠셨나요?"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/penButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/pen" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/page"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/page_content"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/page_background">
+
+            <Button
+                android:id="@+id/menuButton2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/menu" />
+
+            <RelativeLayout
+                android:id="@+id/seekWindowTLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/seekWindow"
+                android:background="@android:color/darker_gray">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seekWindow"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/menuButton2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBaseline="@id/seekButton"
+                    android:text="내 기록 모아보기"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/seekButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right">
+
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seekWindowBLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/seekWindow"
+                android:background="@android:color/darker_gray">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pushWindow"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/seekWindow"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBaseline="@id/pushTimeSelectorButton"
+                    android:text="푸시 알람 시간"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/pushTimeSelectorButton"
+                    android:layout_width="72dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/goldenstroke_background"
+                    android:text="PM 10:00"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/howToUse"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/pushWindow"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBaseline="@id/howToUseButton"
+                    android:text="사용 방법"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/howToUseButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right">
+
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/maker"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/howToUse"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBaseline="@id/makerButton"
+                    android:text="만든 이"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/makerButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right">
+
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/page_transparentButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/page_content"
+            android:background="#00000000">
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+

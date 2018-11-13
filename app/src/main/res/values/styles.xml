@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#ffd700</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/buttonBarButtonStyle.Positive</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/buttonBarButtonStyle.Negative</item>
+    </style>
+    <style name="buttonBarButtonStyle.Positive" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="buttonBarButtonStyle.Negative" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="CustomTimePickerDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:timePickerStyle">@style/MyTimePicker</item>
+        <item name="colorAccent">#ffd700</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/buttonBarButtonStyle.Positive</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/buttonBarButtonStyle.Negative</item>
+    </style>
+
+    <style name="MyTimePicker" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+    <style name="CustomCalendarViewTheme" parent="AppTheme">
+        <item name="colorAccent">#FFd700</item>
+    </style>
+</resources>
